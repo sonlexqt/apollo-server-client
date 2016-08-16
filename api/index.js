@@ -4,7 +4,7 @@ import { apolloExpress, graphiqlExpress } from 'apollo-server'
 import { makeExecutableSchema } from 'graphql-tools'
 
 import { schema, resolvers } from './schema'
-import { Authors } from './sqlite/models'
+import { Authors } from './sql/models'
 
 // Choose a proprietary port
 let PORT = 3010
