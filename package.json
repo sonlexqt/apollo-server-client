@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-server": "nodemon api/index.js --watch api --exec babel-node",
     "start-client": "webpack-dev-server -d --hot --inline --no-info --port 3000",
-    "start": "concurrently \"npm run start-server\" \"npm run start-client\""
+    "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
+    "seed": "knex seed:run",
+    "migrate": "knex migrate:latest"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +21,8 @@
     "graphql": "^0.6.2",
     "graphql-tools": "^0.6.4",
     "json-loader": "^0.5.4",
-    "knex": "^0.11.10"
+    "knex": "^0.11.10",
+    "pg": "^6.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.13.2",
