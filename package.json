@@ -11,6 +11,10 @@
     "seed": "knex seed:run",
     "migrate": "knex migrate:latest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonlexqt/apollo-server-client"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
