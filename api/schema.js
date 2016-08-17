@@ -27,11 +27,7 @@ const rootResolvers = {
   },
   Mutation: {
     addAuthor(_, { firstName, lastName }, context) {
-      return Promise.resolve()
-      .then(() => ({
-        firstName,
-        lastName,
-      }))
+      return context.Authors.addAuthor(firstName, lastName)
     },
   },
 }
